@@ -1,23 +1,5 @@
 const qrcode = require('qrcode-terminal')
 const {Client,LocalAuth} = require("whatsapp-web.js")
-// const fs = require("fs")
-
-// const authFilePath = '.wwebjs_auth';
-// const cacheFilePath = '.wwebjs_cache';
-
-// try {
-//     if (fs.existsSync(authFilePath)) {
-//         fs.unlinkSync(authFilePath);
-//         console.log(`Deleted ${authFilePath}`);
-//     }
-
-//     if (fs.existsSync(cacheFilePath)) {
-//         fs.unlinkSync(cacheFilePath);
-//         console.log(`Deleted ${cacheFilePath}`);
-//     }
-// } catch (err) {
-//     console.error(`Error deleting file: ${err.message}`);
-// }
 
 const whatsapp = new Client({
     authStrategy : new LocalAuth()
